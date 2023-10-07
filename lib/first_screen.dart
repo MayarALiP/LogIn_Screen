@@ -78,17 +78,13 @@ class _FirstScreenState extends State<FirstScreen> {
         ),
         floatingActionButton: ElevatedButton(
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => SecondScreen(
+            Navigator.push(context,
+              MaterialPageRoute(builder: (context) => SecondScreen(
                   data: "Welcome ${user.text}",
                   passdata: password.text,
                 ),
               ),
-            );
-            user.clear();
-            password.clear();// Navigator.push
+            );// Navigator.push
           }, // onPressed
           style: ButtonStyle(
             //side: BorderSide(

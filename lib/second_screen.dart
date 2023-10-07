@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_screen/first_screen.dart';
 
 class SecondScreen extends StatefulWidget {
   var data ;
@@ -21,8 +20,8 @@ class _SecondScreenState extends State<SecondScreen> {
           //const Text("Hi"),
           Text("${widget.data}",
             style: const TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w500,
+              //fontSize: 15,
+             // fontWeight: FontWeight.w500,
             ),
           ),
           //Text("${Widget.passdata}"),
@@ -35,6 +34,8 @@ class _SecondScreenState extends State<SecondScreen> {
         onPressed: () { 
           Navigator.pop(context);
          // FirstScreen().user.clear;
+          //user.clear();
+          //password.clear();
         },
         child: const Icon(
             Icons.arrow_back,
